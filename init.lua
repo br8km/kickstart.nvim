@@ -84,6 +84,8 @@ I hope you enjoy your Neovim journey,
 P.S. You can delete this when you're done too. It's your config now! :)
 --]]
 
+
+
 -- Set <space> as the leader key
 -- See `:help mapleader`
 --  NOTE: Must happen before plugins are loaded (otherwise wrong leader will be used)
@@ -1018,4 +1020,36 @@ require('lazy').setup({
 
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
+
+
+-- Custom
+
+-- Set the number of spaces a <Tab> counts for (for display purposes)
+vim.opt.tabstop = 2
+-- Set the number of spaces to use for each step of (auto)indent
+vim.opt.shiftwidth = 2
+-- Use spaces instead of tabs when the Tab key is pressed in Insert mode
+vim.opt.expandtab = true
+-- Set the number of spaces for the <Tab> key in insert mode
+vim.opt.softtabstop = 2
+
+-- 
+
+
+-- Custom
+
+-- Set the number of spaces a <Tab> counts for (for display purposes)
+vim.opt.tabstop = 2
+-- Set the number of spaces to use for each step of (auto)indent
+vim.opt.shiftwidth = 2
+-- Use spaces instead of tabs when the Tab key is pressed in Insert mode
+vim.opt.expandtab = true
+-- Set the number of spaces for the <Tab> key in insert mode
+vim.opt.softtabstop = 2
+
+-- Disable specific language overrides
+vim.g.markdown_recommended_style = 0 -- For Markdown files
+vim.g.python_recommended_style = 0   -- For Python files
+
+--
 
